@@ -1,12 +1,21 @@
-document.querySelector('#calcular').addEventListener('click',e=>{
-  var peso =document.querySelector('#peso').value
-  var altura=document.querySelector('#altura').value
-  var resposta=document.querySelector('#resposta')
+(function(){
+  document.querySelector('#calcular').addEventListener('click',e=>{
+    var peso =document.getElementById('peso').value
+    var altura=document.getElementById('altura').value
+    var resposta=document.querySelector('#resposta')
 
-  if(!peso || !altura){
-      alert('Digite as informações!')
-  }else{
 
-    resposta.innerHTML+=`seu peso é ${peso}, e sua altura é ${altura}`;
-  }
-})
+    var imc=peso/(altura*altura)
+  
+    if(!peso | !altura){
+        alert('Digite as informações!')
+    }
+     else{
+      resposta.innerHTML+=`<p>
+      Seu I.M.C é: ${imc}
+      </p> 
+    `;
+    }
+  })
+
+})();

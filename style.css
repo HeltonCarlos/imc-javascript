@@ -1,8 +1,13 @@
 *{padding: 0px;margin: 0;box-sizing: border-box;font-family: 'Noto Sans JP', sans-serif;}
-.formulario{margin: 50px auto;width: 350px;background-color: rgb(235, 235, 235);padding: 30px;border-radius: 20px;}
+.formulario{margin: 50px auto;width: 750px;background-color: rgb(235, 235, 235);padding: 20px;border-radius: 20px;max-width: 80%;}
 .tela{max-width:80%;margin:25px auto;}
 label{font-size: 15px;font-weight: 400;}
-h1{text-align: center;font-size: 18px;}
+h1{text-align: center;font-size: 22px;}
 input{display: block;border: 1px solid #c0c0c0;border-radius: 5px;padding: 8px 5px;text-align: left;width: 100%;margin: 10px 0px;}
-input[TYPE="button"]{background-color:rgb(90, 12, 216);color: rgb(255, 255, 255);text-align: center;font-weight: bold;padding: 10px;margin-top: 30px;}
-input[TYPE="button"]:hover{background-color:rgb(54, 3, 136);transition: 1s;}
+input[TYPE="submit"]{background-color:rgb(90, 12, 216);color: rgb(255, 255, 255);text-align: center;font-weight: bold;padding: 10px  0px;margin-top: 20px;}
+input[TYPE="submit"]:hover{background-color:rgb(54, 3, 136);transition: 1s;}
+p{background-color: rgb(102, 73, 230);color: #fff;text-align: center;padding: 10px 0px ;}
+table{text-align: center;font-size: 12px;margin: 0 auto;padding: 5px 10px;}
+tr:first-child{background-color: rgb(0, 22, 95);color:rgb(235, 235, 235);padding: 0px 50px;}
+tr{padding: 20px;padding: 2px 50px;}
+td{padding: 5px 30px;}

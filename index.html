@@ -10,19 +10,61 @@
     <title>Calculo IMC</title>
 </head>
 <body>
-    <div class="formulario">
-        <div class="tela">
-        <h1>I.M.C</h1>
-        <label>Peso</label>
-        <input type="number" id="peso" placeholder="72,5">
-        <label>Altura</label>
-        <input type="number" id="number" placeholder="1,79">
-        <input type="button" value="CALCULAR" id="calcular">
+        <div class="formulario">
+            <h1>I.M.C</h1>
+            <div class="tela">
+       
+                <label>Peso</label>
+                <input type="number" id="peso" placeholder="72,5">
+                <label>Altura</label>
+                <input type="number" id="altura" placeholder="1,79">
+    
+                <table border="0">
+                    <tr>
+                        <td>IMC</td>
+                        <td>CLASSIFICAÇÃO</td>
+                        <td>OBESIDADE (GRAU)</td>
+                    </tr>
+                    <tr>
+                        <td>MENOR QUE 18,5</td>
+                        <td>MAGREZA</td>
+                        <td>0</td>
+                    </tr>
+
+                    <tr>
+                        <td>ENTRE 18,5 E 24,9</td>
+                        <td>NORMAL</td>
+                        <td>0</td>
+                    </tr>
+
+                    <tr>
+                        <td>ENTRE 25,0 E 29,9</td>
+                        <td>SOBREPESO</td>
+                        <td>I</td>
+                    </tr>
+
+                    <tr>
+                        <td>ENTRE 30,0 E 39,9</td>
+                        <td>OBESIDADE</td>
+                        <td>II</td>
+                    </tr>
+
+                    <tr>
+                        <td>MAIOR QUE 40,0</td>
+                        <td>OBESIDADE GRAVE</td>
+                        <td>III</td>
+                    </tr>
+                    </table>
+                    <input type="submit" value="CALCULAR" id="calcular">
+
+                    <div id="resposta">
+                
+                    </div>
+            </div>
+          
+            
         </div>
-        <div>
-            <p  id="resposta"></p>
-        </div>
-    </div>
-<script src="app"></script>
+
+<script src="app.js"></script>
 </body>
 </html>
